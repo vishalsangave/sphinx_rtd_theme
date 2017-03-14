@@ -1,28 +1,17 @@
-.. Sphinx RTD theme demo documentation master file, created by
-   sphinx-quickstart on Sun Nov  3 11:56:36 2013.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
 
 =================================================
-Demo Docs
+Read the Docs Theme Demo Docs
 =================================================
 
-:Page Status: Incomplete
-:Last Reviewed: 2013-10-29
-
-Contents:
+Welcome to the demo docs for the Read the Docs Theme.
 
 .. toctree::
     :maxdepth: 2
-    :caption: Sweet Docs
+    :caption: Syntax Constructs
 
     demo
-    list
-
-.. toctree::
-    :maxdepth: 2
-
-    toc
+    lists_tables
+    body_elements
 
 .. toctree::
     :maxdepth: 2
@@ -52,86 +41,6 @@ Here is another:
 
 You can add a link to equations like the one above :eq:`This is a label` by using ``:eq:``.
 
-Tables
-======
-
-List tables
------------
-
-.. list-table:: List tables can have captions like this one.
-    :widths: 10 5 10 50
-    :header-rows: 1
-    :stub-columns: 1
-
-    * - List table
-      - Header 1
-      - Header 2
-      - Header 3 long. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet mauris arcu.
-    * - Stub Row 1
-      - Row 1
-      - Column 2
-      - Column 3 long. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet mauris arcu.
-    * - Stub Row 2
-      - Row 2
-      - Column 2
-      - Column 3 long. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet mauris arcu.
-    * - Stub Row 3
-      - Row 3
-      - Column 2
-      - Column 3 long. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet mauris arcu.
-
-.. list-table:: This is a list table with images in it.
-
-    * - .. figure:: static/yi_jing_01_chien.jpg
-
-           This is a short caption for a figure.
-
-      - .. figure:: static/yi_jing_01_chien.jpg
-
-           This is a long caption for a figure. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-           Donec porttitor dolor in odio posuere, vitae ornare libero mattis. In lobortis justo vestibulum nibh aliquet, non.
-
-Hlists
-------
-
-.. hlist::
-    :columns: 2
-
-    - First item
-    - Second item
-    - Third item
-    - Forth item
-    - Fifth item
-    - Sixths item
-
-.. rubric:: Hlist with images
-
-.. hlist::
-    :columns: 2
-
-    - .. figure:: static/yi_jing_01_chien.jpg
-
-         This is a short caption for a figure.
-
-    - .. figure:: static/yi_jing_01_chien.jpg
-
-         This is a long caption for a figure. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-         Donec porttitor dolor in odio posuere, vitae ornare libero mattis. In lobortis justo vestibulum nibh aliquet, non.
-
-Giant tables
-------------
-
-+------------+------------+-----------+------------+------------+-----------+------------+------------+-----------+------------+------------+-----------+
-| Header 1   | Header 2   | Header 3  | Header 1   | Header 2   | Header 3  | Header 1   | Header 2   | Header 3  | Header 1   | Header 2   | Header 3  |
-+============+============+===========+============+============+===========+============+============+===========+============+============+===========+
-| body row 1 | column 2   | column 3  | body row 1 | column 2   | column 3  | body row 1 | column 2   | column 3  | body row 1 | column 2   | column 3  |
-+------------+------------+-----------+------------+------------+-----------+------------+------------+-----------+------------+------------+-----------+
-| body row 1 | column 2   | column 3  | body row 1 | column 2   | column 3  | body row 1 | column 2   | column 3  | body row 1 | column 2   | column 3  |
-+------------+------------+-----------+------------+------------+-----------+------------+------------+-----------+------------+------------+-----------+
-| body row 1 | column 2   | column 3  | body row 1 | column 2   | column 3  | body row 1 | column 2   | column 3  | body row 1 | column 2   | column 3  |
-+------------+------------+-----------+------------+------------+-----------+------------+------------+-----------+------------+------------+-----------+
-| body row 1 | column 2   | column 3  | body row 1 | column 2   | column 3  | body row 1 | column 2   | column 3  | body row 1 | column 2   | column 3  |
-+------------+------------+-----------+------------+------------+-----------+------------+------------+-----------+------------+------------+-----------+
 
 Optional parameter args
 -----------------------
@@ -147,7 +56,6 @@ This example comes from `django-payments module docs`_.
 
    Due to API limitations there is no support for transferring purchased items.
 
-
    :param seller_id: Seller ID assigned by Dotpay
    :param pin: PIN assigned by Dotpay
    :param channel: Default payment channel (consult reference guide)
@@ -156,6 +64,17 @@ This example comes from `django-payments module docs`_.
 
 .. _cannot be generated from code: https://groups.google.com/forum/#!topic/sphinx-users/_qfsVT5Vxpw
 .. _django-payments module docs: http://django-payments.readthedocs.org/en/latest/modules.html#payments.authorizenet.AuthorizeNetProvider
+
+Data
+----
+
+.. data:: Data_item_1
+          Data_item_2
+          Data_item_3
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce congue elit eu hendrerit mattis.
+
+Some data link :data:`Data_item_1`.
 
 Code test
 =========
@@ -200,9 +119,18 @@ Sidebar
 
     *Below* CH'IEN THE CREATIVE, HEAVEN
 
-The first hexagram is made up of six unbroken lines. These unbroken lines stand for the primal power, which is light-giving, active, strong, and of the spirit. The hexagram is consistently strong in character, and since it is without weakness, its essence is power or energy. Its image is heaven. Its energy is represented as unrestricted by any fixed conditions in space and is therefore conceived of as motion. Time is regarded as the basis of this motion. Thus the hexagram includes also the power of time and the power of persisting in time, that is, duration.
+The first hexagram is made up of six unbroken lines. These unbroken lines stand for the primal power,
+which is light-giving, active, strong, and of the spirit. The hexagram is consistently strong in character,
+and since it is without weakness, its essence is power or energy. Its image is heaven.
+Its energy is represented as unrestricted by any fixed conditions in space and is therefore conceived of as motion.
+Time is regarded as the basis of this motion. Thus the hexagram includes also the power of time and the power
+of persisting in time, that is, duration.
 
-The power represented by the hexagram is to be interpreted in a dual sense in terms of its action on the universe and of its action on the world of men. In relation to the universe, the hexagram expresses the strong, creative action of the Deity. In relation to the human world, it denotes the creative action of the holy man or sage, of the ruler or leader of men, who through his power awakens and develops their higher nature.
+The power represented by the hexagram is to be interpreted in a dual sense in terms
+of its action on the universe and of its action on the world of men. In relation to the universe,
+the hexagram expresses the strong, creative action of the Deity. In relation to the human world,
+it denotes the creative action of the holy man or sage,
+of the ruler or leader of men, who through his power awakens and develops their higher nature.
 
 Code with Sidebar
 =================
@@ -320,23 +248,6 @@ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac tu
 Aenean nec tincidunt odio. Nam ex quam, egestas ut nisi eu, interdum commodo arcu.
 Mauris venenatis nisi eu condimentum tincidunt. Maecenas eu odio eleifend, fermentum turpis sit amet, faucibus ex.
 
-Data
-====
-
-.. data:: Data_item_1
-          Data_item_2
-          Data_item_3
-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce congue elit eu hendrerit mattis.
-
-Some data link :data:`Data_item_1`.
-
-.. versionadded:: 1.0
-    This was added in 1.0
-.. versionchanged:: 2.0
-    This was changed in 2.0
-.. deprecated:: 3.0
-    This is deprecated since 3.0
 
 Download links
 ==============
