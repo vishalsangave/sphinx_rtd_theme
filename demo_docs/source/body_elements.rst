@@ -208,14 +208,6 @@ Duplicate names in section headers or other implicit targets will
 generate "info" (level-1) system messages.  Duplicate names in
 explicit targets will generate "warning" (level-2) system messages.
 
-Duplicate Target Names
-``````````````````````
-
-Since there are two "Duplicate Target Names" section headers, we
-cannot uniquely refer to either of them by name.  If we try to (like
-this: `Duplicate Target Names`_), an error is generated.
-
-
 Document Parts
 ``````````````
 
@@ -260,6 +252,27 @@ A figure directive with center alignment
 .. figure:: static/yi_jing_01_chien.jpg
    :align: center
    :width: 300
+   
+   Captions on center figures should also be centered.
+
+.. figure:: static/yi_jing_01_chien.jpg
+   :align: right
+
+   This is a caption for a figure. It can be very long and span several lines.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed facilisis metus.
+Ut non dui tellus. Fusce at posuere urna, id posuere elit. Donec pretium sit amet arcu ut eleifend.
+Nullam venenatis quis ex sit amet ultricies. Cras euismod ex sed hendrerit vestibulum.
+Phasellus aliquam efficitur lectus, a laoreet turpis dignissim sit amet. Nullam euismod ornare rhoncus.
+Donec semper felis vitae turpis malesuada, at imperdiet sem elementum.
+Nullam non leo nec nunc accumsan rhoncus in vel quam. Vivamus rutrum molestie tellus vitae commodo.
+Praesent congue interdum lobortis. Ut a arcu suscipit, vehicula mi sit amet, suscipit risus.
+Suspendisse pulvinar sagittis tincidunt. Sed et ornare urna. Integer mauris lectus, facilisis et nulla id,
+semper faucibus eros. Ut rhoncus enim est, sit amet dapibus arcu gravida a.
+Morbi quam nisl, feugiat id vehicula non, fringilla ac nisi. Nulla ac risus et nisl semper interdum non vitae odio.
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+Aenean nec tincidunt odio. Nam ex quam, egestas ut nisi eu, interdum commodo arcu.
+Mauris venenatis nisi eu condimentum tincidunt. Maecenas eu odio eleifend, fermentum turpis sit amet, faucibus ex.
 
 Admonitions
 ===========

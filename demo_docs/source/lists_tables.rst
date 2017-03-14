@@ -45,32 +45,6 @@ List tables
            This is a long caption for a figure. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
            Donec porttitor dolor in odio posuere, vitae ornare libero mattis. In lobortis justo vestibulum nibh aliquet, non.
 
-Hlists
-------
-
-.. hlist::
-    :columns: 2
-
-    - First item
-    - Second item
-    - Third item
-    - Forth item
-    - Fifth item
-    - Sixths item
-
-.. rubric:: Hlist with images
-
-.. hlist::
-    :columns: 2
-
-    - .. figure:: static/yi_jing_01_chien.jpg
-
-         This is a short caption for a figure.
-
-    - .. figure:: static/yi_jing_01_chien.jpg
-
-         This is a long caption for a figure. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-         Donec porttitor dolor in odio posuere, vitae ornare libero mattis. In lobortis justo vestibulum nibh aliquet, non.
 
 Giant tables
 ------------
@@ -120,6 +94,32 @@ True   True   True
 Lists
 =====
 
+Hlists
+------
+
+.. hlist::
+    :columns: 2
+
+    - First item
+    - Second item
+    - Third item
+    - Forth item
+    - Fifth item
+    - Sixths item
+
+.. rubric:: Hlist with images
+
+.. hlist::
+    :columns: 2
+
+    - .. figure:: static/yi_jing_01_chien.jpg
+
+         This is a short caption for a figure.
+
+    - .. figure:: static/yi_jing_01_chien.jpg
+
+         This is a long caption for a figure. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+         Donec porttitor dolor in odio posuere, vitae ornare libero mattis. In lobortis justo vestibulum nibh aliquet, non.
 
 Field Lists
 -----------
@@ -158,29 +158,6 @@ Field Lists
     This document is a demonstration of the reStructuredText markup
     language, containing examples of all basic reStructuredText
     constructs and many advanced constructs.
-
-.. meta::
-   :keywords: reStructuredText, demonstration, demo, parser
-   :description lang=en: A demonstration of the reStructuredText
-       markup language, containing examples of all basic
-       constructs and many advanced constructs.
-
-Field Lists
------------
-
-:Field List:
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-    minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-    ex ea commodo consequat.
-
-    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-    dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-some text
-
-:Field List 2: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
 
 
 Bullet Lists
@@ -246,20 +223,6 @@ Term : classifier
 Term
     Definition
 
-
-Field Lists
------------
-
-:what: Field lists map field names to field bodies, like database
-       records.  They are often part of an extension syntax.  They are
-       an unambiguous variant of RFC 2822 fields.
-
-:how arg1 arg2:
-
-    The field marker is a colon, the field name, and a colon.
-
-    The field body may contain one or more body elements, indented
-    relative to the field marker.
 
 Option Lists
 ------------

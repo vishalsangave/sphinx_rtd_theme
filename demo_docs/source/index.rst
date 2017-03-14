@@ -76,8 +76,8 @@ Data
 
 Some data link :data:`Data_item_1`.
 
-Code test
-=========
+Code Blocks
+===========
 
 .. parsed-literal::
 
@@ -108,6 +108,35 @@ Code test
     "session_name": "shorthands"
     }
 
+
+Code with Sidebar
+-----------------
+
+.. sidebar:: A code example
+
+    With a sidebar on the right.
+
+.. literalinclude:: test_py_module/test.py
+    :language: python
+    :caption: Literal includes can also have captions.
+    :linenos:
+    :lines: 1-40
+
+
+Emphasized lines with line numbers
+----------------------------------
+
+.. code-block:: python
+   :linenos:
+   :emphasize-lines: 3,5
+
+   def some_function():
+       interesting = False
+       print 'This line is highlighted.'
+       print 'This one is not...'
+       print '...but this one is.'
+
+
 Sidebar
 =======
 
@@ -132,38 +161,6 @@ the hexagram expresses the strong, creative action of the Deity. In relation to 
 it denotes the creative action of the holy man or sage,
 of the ruler or leader of men, who through his power awakens and develops their higher nature.
 
-Code with Sidebar
-=================
-
-.. sidebar:: A code example
-
-    With a sidebar on the right.
-
-.. literalinclude:: test_py_module/test.py
-    :language: python
-    :caption: Literal includes can also have captions.
-    :linenos:
-    :lines: 1-40
-
-Boxes
-=====
-
-.. tip::
-    Equations within a note
-    :math:`G_{\mu\nu} = 8 \pi G (T_{\mu\nu}  + \rho_\Lambda g_{\mu\nu})`.
-
-.. note::
-    Equations within a note
-    :math:`G_{\mu\nu} = 8 \pi G (T_{\mu\nu}  + \rho_\Lambda g_{\mu\nu})`.
-
-.. danger::
-    Equations within a note
-    :math:`G_{\mu\nu} = 8 \pi G (T_{\mu\nu}  + \rho_\Lambda g_{\mu\nu})`.
-
-.. warning::
-    Equations within a note
-    :math:`G_{\mu\nu} = 8 \pi G (T_{\mu\nu}  + \rho_\Lambda g_{\mu\nu})`.
-
 
 Inline code and references
 ==========================
@@ -186,32 +183,6 @@ documentation for it.
 .. _Docutils: http://docutils.sourceforge.net/
 .. _Inline Markup: http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#inline-markup
 
-.. note:: Every other line in this table will have white text on a white background.
-            This is bad.
-
-    +---------+
-    | Example |
-    +=========+
-    | Thing1  |
-    +---------+
-    | Thing2  |
-    +---------+
-    | Thing3  |
-    +---------+
-
-Emphasized lines with line numbers
-==================================
-
-.. code-block:: python
-   :linenos:
-   :emphasize-lines: 3,5
-
-   def some_function():
-       interesting = False
-       print 'This line is highlighted.'
-       print 'This one is not...'
-       print '...but this one is.'
-
 
 Citation
 ========
@@ -225,29 +196,17 @@ Here I am making a citation [1]_, another [2]_ and another [3]_
 
 .. [3] This citation will have two backlinks.
 
-======
-Images
-======
 
-.. figure:: static/yi_jing_01_chien.jpg
-    :align: right
+Meta
+====
 
-    This is a caption for a figure. It can be very long and span several lines.
+Meta tags can be found here. View the HTML source to view them.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed facilisis metus.
-Ut non dui tellus. Fusce at posuere urna, id posuere elit. Donec pretium sit amet arcu ut eleifend.
-Nullam venenatis quis ex sit amet ultricies. Cras euismod ex sed hendrerit vestibulum.
-Phasellus aliquam efficitur lectus, a laoreet turpis dignissim sit amet. Nullam euismod ornare rhoncus.
-Donec semper felis vitae turpis malesuada, at imperdiet sem elementum.
-Nullam non leo nec nunc accumsan rhoncus in vel quam. Vivamus rutrum molestie tellus vitae commodo.
-Praesent congue interdum lobortis. Ut a arcu suscipit, vehicula mi sit amet, suscipit risus.
-Suspendisse pulvinar sagittis tincidunt. Sed et ornare urna. Integer mauris lectus, facilisis et nulla id,
-semper faucibus eros. Ut rhoncus enim est, sit amet dapibus arcu gravida a.
-Morbi quam nisl, feugiat id vehicula non, fringilla ac nisi. Nulla ac risus et nisl semper interdum non vitae odio.
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-Aenean nec tincidunt odio. Nam ex quam, egestas ut nisi eu, interdum commodo arcu.
-Mauris venenatis nisi eu condimentum tincidunt. Maecenas eu odio eleifend, fermentum turpis sit amet, faucibus ex.
-
+.. meta::
+   :keywords: reStructuredText, demonstration, demo, parser
+   :description lang=en: A demonstration of the reStructuredText
+       markup language, containing examples of all basic
+       constructs and many advanced constructs.
 
 Download links
 ==============
